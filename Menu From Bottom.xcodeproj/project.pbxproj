@@ -12,6 +12,8 @@
 		4789484B1E8EDE8800FF4F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478948491E8EDE8800FF4F08 /* Main.storyboard */; };
 		4789484D1E8EDE8800FF4F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4789484C1E8EDE8800FF4F08 /* Assets.xcassets */; };
 		478948501E8EDE8800FF4F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4789484E1E8EDE8800FF4F08 /* LaunchScreen.storyboard */; };
+		4789485B1E92B4F200FF4F08 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789485A1E92B4F200FF4F08 /* UIViewX.swift */; };
+		4789485D1E92BA3400FF4F08 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789485C1E92BA3400FF4F08 /* UIButtonX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4789484C1E8EDE8800FF4F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4789484F1E8EDE8800FF4F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		478948511E8EDE8800FF4F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4789485A1E92B4F200FF4F08 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		4789485C1E92BA3400FF4F08 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		478948441E8EDE8800FF4F08 /* Menu From Bottom */ = {
 			isa = PBXGroup;
 			children = (
+				478948571E92B39E00FF4F08 /* IBDesignable */,
 				478948451E8EDE8800FF4F08 /* AppDelegate.swift */,
 				478948471E8EDE8800FF4F08 /* ViewController.swift */,
 				478948491E8EDE8800FF4F08 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				478948511E8EDE8800FF4F08 /* Info.plist */,
 			);
 			path = "Menu From Bottom";
+			sourceTree = "<group>";
+		};
+		478948571E92B39E00FF4F08 /* IBDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				4789485A1E92B4F200FF4F08 /* UIViewX.swift */,
+				4789485C1E92BA3400FF4F08 /* UIButtonX.swift */,
+			);
+			name = IBDesignable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4789485D1E92BA3400FF4F08 /* UIButtonX.swift in Sources */,
 				478948481E8EDE8800FF4F08 /* ViewController.swift in Sources */,
+				4789485B1E92B4F200FF4F08 /* UIViewX.swift in Sources */,
 				478948461E8EDE8800FF4F08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +315,7 @@
 				478948561E8EDE8800FF4F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
