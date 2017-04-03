@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Menu_From_Bottom" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="sqQ-dH-LGK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uic-9F-XTs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gs3-6Y-eVD">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animated Menu From Bottom" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaN-sO-IsM">
+                                            <rect key="frame" x="10" y="60" width="355" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="MuA-Ij-v9d"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="26"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZaN-sO-IsM" firstAttribute="top" secondItem="Gs3-6Y-eVD" secondAttribute="top" constant="60" id="4lc-Xg-Xqn"/>
+                                        <constraint firstItem="ZaN-sO-IsM" firstAttribute="leading" secondItem="Gs3-6Y-eVD" secondAttribute="leading" constant="10" id="Ihq-6s-Xn8"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZaN-sO-IsM" secondAttribute="trailing" constant="10" id="Tcg-Ce-gaY"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sqQ-dH-LGK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8U0-h0-FsU"/>
+                            <constraint firstItem="sqQ-dH-LGK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ACM-td-Kes"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uic-9F-XTs" secondAttribute="bottom" id="CaU-RQ-wtS"/>
+                            <constraint firstItem="Uic-9F-XTs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QM9-xi-9cD"/>
+                            <constraint firstItem="Uic-9F-XTs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S6d-9U-9Rd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sqQ-dH-LGK" secondAttribute="bottom" id="feT-tM-F6I"/>
+                            <constraint firstAttribute="trailing" secondItem="Uic-9F-XTs" secondAttribute="trailing" id="sF8-3M-4of"/>
+                            <constraint firstAttribute="trailing" secondItem="sqQ-dH-LGK" secondAttribute="trailing" id="yse-hU-T8N"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="green" width="414" height="736"/>
+    </resources>
 </document>
